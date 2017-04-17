@@ -1,0 +1,3 @@
+function runBatchLayer():
+	while(true):
+		recomputeBatchViews()

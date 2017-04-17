@@ -1,0 +1,5 @@
+Api.execute(Api.hfsSeqfile("/tmp/pageview-counts"),
+	new Subquery("?url", "?count")
+		.predicate(Api.hfsSeqfile("/data/pageviews"),
+			"?url", "?user", "?timestamp")
+				.predicate(new Count(), "?count");
