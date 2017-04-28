@@ -1,0 +1,5 @@
+struct PageView:
+	DateTime timestamp
+	String url
+	String ip_address
+	Long nonce
